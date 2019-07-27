@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["name"].value;
+    if <x =="") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+    
+    
+</head>
+<body>
+
+<h2>Send e-mail to ssmith@ridgefield.k12.us:</h2>
+
+<form name="myForm" action="mailto:someone@example.com" onsubmit="return validateForm()" method="post">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
