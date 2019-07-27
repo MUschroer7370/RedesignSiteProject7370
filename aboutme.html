@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700Open+Sans:400,700Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+      
+function validateForm() {
+      
+var x=document.forms["myForm"]["name"].value;
+if  (x=="")
+    {
+    alert("Name must be filled out");
+    return false;
+    }
+}
+      
+</script>
+      
+      
+  </head>
+  <body>
+
+	<div id="wrapper">
+    	<header>
+    		<h1>About Me</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="reading.html">Reading Class</a>
+                <a href="creativewriting.html">Creative Writing Class</a>
+                <a href="aboutme.html">About Me</a>
+                <a  href="gallery.html">Gallery</a>
+        	</nav>
+    	</header>
+        <div class="col_wrap">
+        	
+<div class="mainbody">
+       <article>
+   <img src="img/griffin.png" height="200" alt="Griffin Logo">
+    <h3>Mrs. Stacy Smith</h3>
+           <p>Hi! I'm Stacy Smith and I teach 6th grade reading and creative writing at Ridgefield Elementary. I received my bachelor's degree in elementary education from State College, which is also where I met my husband, Tim. He and I have two beautiful children, plus two dogs and a cat.</p>
+           <p>If you need to contact me, you can call the main school phone number or you can email me at ssmith@ridgefield.k12.us </p>
+           <p>Thanks for stopping by!</p>
+        </article>
+        <aside>
+             <img src="img/mrssmith.jpg" height="200" width="200" alt="Mrs. Smith">
+            <br/>
+<h2>Send e-mail to ssmith@ridgefield.k12.us:</h2>
+
+<form name="myForm" action="mailto:someone@example.com" onsubmit="return validateForm()" method="post">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+            
+        </aside>
+        </div>
+        </div>
+       	<footer>
+            <p>Page created by (insert name here) updated on (insert date here).</p>
+        </footer>
+    </div>
+
+   
+  </body>
+</html>
+
